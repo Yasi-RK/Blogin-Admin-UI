@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Blogen Posts Page</title>
+    <title>Blogen Users Page</title>
 </head>
 <body>
     <!-- start here  -->
@@ -22,13 +22,13 @@
                         <a href="index.html" class="nav-link ">Dashboard</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="posts.html" class="nav-link active">Posts</a>
+                        <a href="posts.html" class="nav-link ">Posts</a>
                     </li>
                     <li class="nav-item px-2">
                         <a href="categories.html" class="nav-link">Categories</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="users.html" class="nav-link">Users</a>
+                        <a href="users.html" class="nav-link active">Users</a>
                     </li>
                 </ul>
 
@@ -53,11 +53,11 @@
     </nav>
 
      <!-- Header  -->
-     <header class="bg-primary text-white py-2" id="main-header">
+     <header class="bg-warning text-white py-2" id="main-header">
          <div class="container">
             <div class="row">
                  <div class="col-md-6">
-                     <h1><i class="fas fa-pencil-alt"></i> Posts</h1>
+                     <h1><i class="fas fa-users"></i> Users</h1>
                  </div>
             </div>
          </div>
@@ -72,7 +72,7 @@
                      <div class="input-group">
                          <input type="text" class="form-control">
                          <form-group-append>
-                             <button class="btn btn-primary">Search...</button>
+                             <button class="btn btn-warning">Search Users...</button>
                          </form-group-append>
                      </div>
 
@@ -83,28 +83,26 @@
      </section>
 
      <!-- Posts Table -->
-     <section class="posts">
+     <section class="users">
          <div class="container">
              <div class="row">
                  <div class="col">
                      <div class="card">
-                         <div class="card-header"><h5>Latest Posts</h5></div>
+                         <div class="card-header"><h5>Latest Users</h5></div>
                          <table class="table table-striped">
                              <thead class="thead-dark">
                                  <tr>
                                      <th>#</th>
-                                     <th>Title</th>
-                                     <th>Category</th>
-                                     <th>Date</th>
+                                     <th>Name</th>
+                                     <th>Email</th>
                                      <th></th>
                                  </tr>
                              </thead>
                              <tbody>
                                  <tr>
                                      <td>1</td>
-                                     <td>Post One</td>
-                                     <td>Web Developmen</td>
-                                     <td>may 10 2019</td>
+                                     <td> John Doe</td>
+                                     <td>john@gmail.com</td>
                                      <td>
                                         <a href="dtails.html" class="btn btn-secondary">
                                             <i class="fas fa-angle-doubble-right"></i>More Details
@@ -114,9 +112,8 @@
                                  </tr>
                                  <tr>
                                     <td>2</td>
-                                    <td>Post Two</td>
-                                    <td>Game Center</td>
-                                    <td>may 15 2019</td>
+                                    <td>Harry White</td>
+                                    <td>harry@yahoo.com</td>
                                     <td>
                                        <a href="dtails.html" class="btn btn-secondary">
                                            <i class="fas fa-angle-doubble-right"></i>More Details
@@ -126,63 +123,16 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Post Three</td>
-                                    <td>Web Developmen</td>
-                                    <td>may 21 2019</td>
+                                    <td>Marry Johnson</td>
+                                    <td>marry@yahoo.com</td>
                                     <td>
                                        <a href="dtails.html" class="btn btn-secondary">
                                            <i class="fas fa-angle-doubble-right"></i>More Details
                                        </a>
                                     </td>
-                                  
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Post four</td>
-                                    <td>HArdware Engineering</td>
-                                    <td>may 10 2019</td>
-                                    <td>
-                                       <a href="dtails.html" class="btn btn-secondary">
-                                           <i class="fas fa-angle-doubble-right"></i>More Details
-                                       </a>
-                                    </td>
-                                  
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Post Five</td>
-                                    <td>Software Support</td>
-                                    <td>may 29 2019</td>
-                                    <td>
-                                       <a href="dtails.html" class="btn btn-secondary">
-                                           <i class="fas fa-angle-doubble-right"></i>More Details
-                                       </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Post Six</td>
-                                    <td>Web Developmen</td>
-                                    <td>may 30 2019</td>
-                                    <td>
-                                       <a href="dtails.html" class="btn btn-secondary">
-                                           <i class="fas fa-angle-doubble-right"></i>More Details
-                                       </a>
-                                    </td>
-                                </tr>
                              </tbody>
                          </table>
-                         <nav class="ml-4">
-                             <ul class="pagination">
-                                <li class="page-item mr-2 disabled"><a href="#" class="page-link">Previous</a></li>
-                                <li class="page-item mr-2 active"><a href="#" class="page-link">1</a></li>
-                                <li class="page-item mr-2"><a href="#" class="page-link">2</a></li>
-                                <li class="page-item mr-2"><a href="#" class="page-link">3</a></li>
-                                <li class="page-item mr-2"><a href="#" class="page-link">4</a></li>
-                                <li class="page-item mr-2"><a href="#" class="page-link">5</a></li>
-                                <li class="page-item mr-2"><a href="#" class="page-link">Next</a></li>
-                            </ul>
-                        </nav>
+                         
                      </div>
                  </div>
                
